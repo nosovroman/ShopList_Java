@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Список покупок</string>
+    <string name="email_input">Адрес эл. почты</string>
+    <string name="password_input">Пароль</string>
+    <string name="entrance_text">Войти</string>
+    <string name="entrance_title">Вход</string>
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_btn">Зарегистрироваться</string>
+    <string name="exist_account_text">Уже есть аккаунт</string>
+    <string name="description">
+        <![CDATA[
+            С помощью <i>Списка Покупок</i> Вы можете
+            спланировать покупки перед походом в магазин.
+            <br>
+        ]]>
+    </string>
+    <string name="description2">
+        <![CDATA[
+              ✔️ Сэкономить время в магазине<br>
+              ✔️ Организовать закупку только необходимыми продуктами<br>
+              ✔️ Не забыть ничего купить<br>
+              ✔️ Редактировать список вместе с друзьями<br>
+        ]]>
+    </string>
+    <string name="exit_text">Выйти</string>
+    <string name="name_list_text">Название списка</string>
+    <string name="create_text">Создать</string>
+    <string name="my_lists_text">Мои списки:</string>
+    <string name="big_list_item_text">bigList text</string>
+    <string name="exit_account_text">Выход из аккаунта</string>
+    <string name="sure_exit_text">Вы уверены, что хотите выйти из аккаунта?</string>
+    <string name="del_list_text">Удаление списка</string>
+    <string name="sure_del_list_text">Вы уверены, что хотите удалить список</string>
+    <string name="del_item_text">Удаление продукта из списка</string>
+    <string name="sure_del_item_text">Вы уверены, что хотите удалить продукт</string>
+    <string name="small_list_item_text">smallList text</string>
+    <string name="invitation_text">Приглашение</string>
+    <string name="ready_text">Готово</string>
+    <string name="cancel_button">Назад</string>
+    <string name="inv_email_text">Эл. почта пользователя</string>
+    <string name="inv_info_text">Вы можете пригласить друга для совместного редактирования вашего списка </string>
+    <string name="item_checkbox_noDone_emoji">⬜</string>
+    <string name="item_checkbox_isDone_emoji">✔️</string>
+    <string name="item_edit_emoji">✏️</string>
+    <string name="item_del_emoji">❌</string>
+    <string name="name_item_text">Название продукта</string>
+    <string name="addText">Добавить</string>
+</resources>

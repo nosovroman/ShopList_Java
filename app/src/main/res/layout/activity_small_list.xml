@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BigList"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/home_imgbtn_bar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/background"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/home_imgbtn_bar"
+            android:text="@string/app_name"
+            android:textColor="@color/main_text_color"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/exit_imgbtn_bar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/title_bar"
+            android:background="@color/background"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_exit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="90">
+
+            <ProgressBar
+                android:id="@+id/loadingSList"
+                android:layout_width="70dp"
+                android:layout_height="92dp"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:theme="@style/CircularProgress"/>
+
+            <LinearLayout
+                android:id="@+id/component_visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/curList_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/main_text_color"
+                        android:text="На рыбалку"/>
+
+                    <ImageButton
+                        android:id="@+id/addFriends_iBtn"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/background"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_users"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/input_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:id="@+id/smallList_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100"
+                        android:padding="10dp"
+                        android:hint="@string/name_item_text"
+                        android:inputType="text"
+                        android:background="@drawable/input_add_list_layout"
+                        android:importantForAutofill="no" />
+
+                    <Button
+                        android:id="@+id/add_smallList_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_add_list_layout"
+                        android:padding="10dp"
+                        android:text="@string/addText"
+                        android:textAllCaps="false"
+                        android:textColor="@color/btn_text_color" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/smallList_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

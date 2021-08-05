@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvitationActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/home_imgbtn_bar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/background"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/home_imgbtn_bar"
+            android:text="@string/app_name"
+            android:textColor="@color/main_text_color"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/exit_imgbtn_bar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/title_bar"
+            android:background="@color/background"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_exit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:elevation="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/invitation_text"
+                android:textColor="@color/main_text_color"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/invitationInfo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/invitation_text"
+                android:textColor="@color/main_text_color"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/input_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:weightSum="100">
+
+                <EditText
+                    android:id="@+id/input_invitation_et"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="100"
+                    android:background="@drawable/input_add_list_layout"
+                    android:hint="@string/inv_email_text"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/add_user_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_add_list_layout"
+                    android:padding="10dp"
+                    android:text="@string/ready_text"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_text_color" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cancel_fromInv_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_of_list_nochecked_layout"
+                android:text="@string/cancel_button"
+                android:textAllCaps="false"
+                android:textColor="@color/button_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:minWidth="200dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/entrance_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/main_text_color"
+            android:text="@string/entrance_title"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/entrance_tv_title"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/input_form_layout"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:hint="@string/email_input"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_et"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/input_form_layout"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="@string/password_input"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/password_et"
+            android:background="@drawable/button_background"
+            android:textColor="@color/button_text_color"
+            android:text="@string/entrance_text"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/registration_tv_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_button"
+            android:gravity="end"
+            android:text="@string/registration_title"
+            android:textSize="16sp"
+            android:paddingRight="25px"
+            android:textColor="@color/button_color"/>
+
+    </RelativeLayout>
+</ScrollView>

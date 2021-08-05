@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/small_linear_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/item_of_list_nochecked_layout"
+    android:weightSum="100"
+    android:layout_marginTop="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/item_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="@string/item_checkbox_noDone_emoji"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/smallList_item_tv"
+        android:layout_weight="100"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:text="@string/small_list_item_text"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/edit_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:rotation="90"
+        android:text="@string/item_edit_emoji"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/del_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="@string/item_del_emoji"
+        android:textSize="18sp"/>
+
+</LinearLayout>

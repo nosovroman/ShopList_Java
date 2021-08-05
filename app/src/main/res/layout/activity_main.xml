@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/loadingHello"
+            android:layout_width="70dp"
+            android:layout_height="92dp"
+            android:indeterminate="true"
+            android:theme="@style/CircularProgress"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:maxWidth="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/main_text_color"
+            android:lineSpacingMultiplier="1.4"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <TextView
+            android:id="@+id/description2"
+            android:maxWidth="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/main_text_color"
+            android:lineSpacingMultiplier="1.4"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="302dp"
+            android:layout_below="@id/description"/>
+
+        <Button
+            android:id="@+id/logRegButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрироваться или войти"
+            android:textAllCaps="false"
+            tools:layout_editor_absoluteX="196dp"
+            tools:layout_editor_absoluteY="451dp"
+            android:layout_below="@id/description2"
+            android:background="@drawable/button_background"
+            android:textColor="@color/button_text_color"
+            android:padding="30dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>
